@@ -8,7 +8,6 @@ public class Kwic {
     private Map<String, Integer> linesWithIndex = new HashMap<>();
     public void input(String file) {
         lines = readFile(file);
-        System.out.println(lines);
     }
 
     public void circularShift() {

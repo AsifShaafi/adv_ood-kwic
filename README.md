@@ -32,6 +32,33 @@ To Run the code, we need a .txt file with the data we want to index.
 
 Go to the _src_ folder and open command line and run the following:
 
-    java Main \path\to\data\file
+    java Main "\path\to\data\file"
 
 
+### Run example
+
+From the project root directory, open command line and run:
+
+    java Main "\example\data.txt"
+
+Input:
+
+```
+Department of Computer Science
+Key Word in Context
+```
+
+Output:
+
+```
+[Department of Computer Science, Key Word in Context]
+Computer Science Department of                  line: 0
+Context Key Word in                     line: 1
+Department of Computer Science                  line: 0
+Key Word in Context                     line: 1
+Science Department of Computer                  line: 0
+Word in Context Key                     line: 1
+in Context Key Word                     line: 1
+of Computer Science Department                  line: 0
+
+```

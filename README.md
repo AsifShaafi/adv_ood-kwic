@@ -51,7 +51,7 @@ Key Word in Context
 Output:
 
 ```
-[Department of Computer Science, Key Word in Context]
+
 Computer Science Department of                  line: 0
 Context Key Word in                     line: 1
 Department of Computer Science                  line: 0

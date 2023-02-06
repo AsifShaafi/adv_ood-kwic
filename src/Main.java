@@ -7,5 +7,7 @@ public class Main {
         Kwic kwic = new Kwic();
         kwic.input(args[0]);
         kwic.circularShift();
+        kwic.alphabetizing();
+        kwic.output();
     }
 }

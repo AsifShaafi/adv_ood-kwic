@@ -5,6 +5,7 @@ import java.util.*;
 public class Kwic {
     private List<String> lines;
     private final List<List<String>> shiftLines = new ArrayList<>();
+    private Map<String, Integer> linesWithIndex = new HashMap<>();
     public void input(String file) {
         lines = readFile(file);
         System.out.println(lines);

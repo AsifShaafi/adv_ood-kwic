@@ -37,9 +37,9 @@ Go to the _src_ folder and open command line and run the following:
 
 ### Run example
 
-From the project root directory, open command line and run:
+From the project _src_ directory, open command line and run:
 
-    java Main "\example\data.txt"
+    java Main "../example/data.txt"
 
 Input:
 

@@ -47,4 +47,31 @@ public class Kwic {
 
         return fileData;
     }
+    
+    public void alphabetizing() {
+        Map<String, Integer> shiftedLineMap = new HashMap<>();
+
+        for (int i = 0; i < shiftLines.size(); i++) {
+            List<String> lines = shiftLines.get(i);
+            for (String line :
+                    lines) {
+                shiftedLineMap.put(line, i);
+            }
+        }
+
+        linesWithIndex = sortLines(shiftedLineMap);
+
+    }
+
+    public void output() {
+        for (String indexedLines :
+                linesWithIndex.keySet()) {
+            System.out.printf("%s\t\t\tline: %d\n", indexedLines, linesWithIndex.get(indexedLines));
+        }
+    }
+
+    private Map<String, Integer> sortLines(Map<String, Integer> map) {
+
+        return new TreeMap<>(map);
+    }
 }
